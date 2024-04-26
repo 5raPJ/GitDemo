@@ -8,6 +8,10 @@ driver = webdriver.Chrome()
 driver.get("https://rahulshettyacademy.com/angularpractice/")
 driver.implicitly_wait(4)
 
+
+
+
+
 driver.find_element(By.CSS_SELECTOR, "a[href*='shop']").click()
 products = driver.find_elements(By.XPATH, "//div[@class='card h-100']")
 for product in products:
@@ -25,4 +29,5 @@ driver.find_element(By.XPATH, "//div[@class='checkbox checkbox-primary']").click
 driver.find_element(By.CSS_SELECTOR, "[type='submit']").click()
 successText = driver.find_element(By.CLASS_NAME, "alert-success").text
 assert "Success! Thank you!" in successText
+driver.close()
 driver.close()
