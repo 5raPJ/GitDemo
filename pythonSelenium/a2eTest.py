@@ -6,7 +6,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 driver = webdriver.Chrome()
 driver.get("https://rahulshettyacademy.com/angularpractice/")
-driver.implicitly_wait(4)
+driver.implicitly_wait(44)
 
 
 
