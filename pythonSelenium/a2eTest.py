@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
+"driver = webdriver.Chrome()"
 driver = webdriver.Chrome()
 driver.get("https://rahulshettyacademy.com/angularpractice/")
 driver.implicitly_wait(44)
