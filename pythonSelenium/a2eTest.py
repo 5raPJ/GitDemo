@@ -34,4 +34,3 @@ assert "Success! Thank you!" in successText
 
 
 driver.close()
-driver.close()
