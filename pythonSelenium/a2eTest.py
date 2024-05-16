@@ -30,5 +30,8 @@ driver.find_element(By.XPATH, "//div[@class='checkbox checkbox-primary']").click
 driver.find_element(By.CSS_SELECTOR, "[type='submit']").click()
 successText = driver.find_element(By.CLASS_NAME, "alert-success").text
 assert "Success! Thank you!" in successText
+
+
+
 driver.close()
 driver.close()
